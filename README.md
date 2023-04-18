@@ -1,5 +1,29 @@
 # SacCar Genome using braker1
 
+## 17.04.2023 RepeatModeler
+
+Build genome database for SacCar as input for RepeatModeler
+```
+BuildDatabase SacCar_genome.fa -name ~/repeatmodeler_database/SacCar_repeat_db
+```
+
+Runing RepeatModeler on SacCar genome 
+```
+nohup RepeatModeler -pa 19 -database ~/repeatmodeler_database/SacCar_repeat_db
+```
+
+## 18.04.2023
+
+Building genome database for SemBal as input for RepeatModeler
+```
+BuildDatabase SemBal_genome.fa -name ~/Genomes/SemBal/repeat_modeler_db/SemBal_rmdel_db
+```
+
+```
+nohup RepeatModeler -pa 19 -database ~/Genomes/SemBal/repeat_modeler_db/SemBal_rmdel_db
+```
+
+
 
 Test - 1
 ```
@@ -23,3 +47,7 @@ for second 10 files
 ```
 for file in /home/riwama/Genomes/SacCar/augustus_2nd/fasta_files/aa_divided/2_run/augustus.hints_dv.aa*; do /home/riwama/Softwares/interproscan-5.61-93.0/./interproscan.sh -cpu 5 -d /home/riwama/Genomes/SacCar/interpro -goterms -i $file; done
 ```
+
+
+
+
