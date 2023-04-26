@@ -9,7 +9,7 @@ BuildDatabase SacCar_genome.fa -name ~/repeatmodeler_database/SacCar_repeat_db
 
 Runing RepeatModeler on SacCar genome 
 ```
-nohup RepeatModeler -pa 19 -database ~/repeatmodeler_database/SacCar_repeat_db
+nohup RepeatModeler -threads 19 -database ~/repeatmodeler_database/SacCar_repeat_db
 ```
 
 ## 18.04.2023
@@ -20,7 +20,7 @@ BuildDatabase SemBal_genome.fa -name ~/Genomes/SemBal/repeat_modeler_db/SemBal_r
 ```
 
 ```
-nohup RepeatModeler -pa 19 -database ~/Genomes/SemBal/repeat_modeler_db/SemBal_rmdel_db
+nohup RepeatModeler -threads 19 -database ~/Genomes/SemBal/repeat_modeler_db/SemBal_rmdel_db
 ```
 
 
