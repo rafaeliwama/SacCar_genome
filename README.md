@@ -37,7 +37,7 @@ SemBal genome
 nohup ~/Softwares/RepeatMasker/./RepeatMasker -s -pa 3 -lib /home/riwama/Genomes/SemBal/RM_2742576.TueApr252054222023/consensi.fa ~/Genomes/SacCar/SacCar_genome.fa -xsmall
 ```
 
-## 03.05.23 braker structural annotation of SacCar genome
+## 04.05.23 braker structural annotation of SacCar genome
 
 Braker2 run on SacCar genome using protein sequences predicted from transcriptomes
 ```
