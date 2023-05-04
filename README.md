@@ -30,7 +30,9 @@ Softmasking of SacCar genome
 nohup ~/Softwares/RepeatMasker/./RepeatMasker -s -pa 3 -lib ~/Genomes/SacCar/RM_1648467.SunApr300848432023/consensi.fa ~/Genomes/SacCar/SacCar_genome.fa -xsmall
 ```
 
-
+```
+nohup braker.pl --genome ~/Genomes/SacCar/SacCar_genome.fa.masked --prot_seq /home/riwama/Genomes/SacCar/Transcriptomes/Ass/pep_transdecoder/SacCar_proteome_conc.pep --GENEMARK_PATH=/home/riwama/Softwares/gmes_linux_64 --PROTHINT_PATH=/home/riwama/Softwares/ProtHint/bin --softmasking --cores=10 --species=SacCar --gff3 --useexisting
+```
 
 Softmasking of SacCar genome
 
