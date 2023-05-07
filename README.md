@@ -49,10 +49,12 @@ Braker2 run on SemBal genome using protein sequences predicted from transcriptom
 nohup braker.pl --genome /home/riwama/Genomes/SemBal/SemBal_genome.fa.masked --prot_seq /home/riwama/Genomes/SemBal/Transcriptomes/pep/SemBal_transcriptomes_pep_conc.fa --GENEMARK_PATH=/home/riwama/Softwares/gmes_linux_64 --PROTHINT_PATH=/home/riwama/Softwares/ProtHint/bin --softmasking --cores=10 --species=SemBal --gff3 --useexisting
 ```
 
+## 06.05.2023 Functional annotation
 
-
-
-
+# interproscan - SacCar
+```
+for file in SacCar_genome_augustus*;do ~/Softwares/interproscan-5.61-93.0/interproscan.sh -cpu 10 -i $file -goterms $file.interpro; done
+```
 
 
 
