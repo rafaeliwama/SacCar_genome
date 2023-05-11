@@ -58,6 +58,21 @@ for file in SacCar_genome_augustus*;do ~/Softwares/interproscan-5.61-93.0/interp
 
 
 
+## 11.05.2023 RepeatModeler on PlatSpe
+
+Building PlatSpe RepeatModeler database
+```
+/Softwares/RepeatModeler/./BuildDatabase PlatSpe_genome_renamed.fa -name /home/riwama/Genomes/PlatSpe/RepeatModeler/PlatSpe_RepeatModeler_db
+```
+
+Running RepeatModeler
+```
+nohup ~/Softwares/RepeatModeler/./RepeatModeler -threads 19 -database /home/riwama/Genomes/PlatSpe/RepeatModeler/PlatSpe_RepeatModeler_db
+```
+
+
+
+
 
 
 
