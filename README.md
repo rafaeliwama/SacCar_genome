@@ -70,8 +70,13 @@ Running RepeatModeler
 nohup ~/Softwares/RepeatModeler/./RepeatModeler -threads 19 -database /home/riwama/Genomes/PlatSpe/RepeatModeler/PlatSpe_RepeatModeler_db
 ```
 
+## 07.07.2023 Busco on genomes
 
+I run busco, protein mode, using the arthropoda_odb10 set on each genome.
 
+```
+nohup busco -i protein.faa -l arthropoda_odb10 -o genome_busco.out -m proteins --cpu 5 -f
+```
 
 
 
