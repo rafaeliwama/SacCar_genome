@@ -78,7 +78,7 @@ I run busco, protein mode, using the arthropoda_odb10 set on each genome.
 nohup busco -i protein.faa -l arthropoda_odb10 -o genome_busco.out -m proteins --cpu 5 -f
 ```
 
-## functional annotation SacCar
+## 11.07.2023 functional annotation SacCar
 
 blastp e interpro
 
