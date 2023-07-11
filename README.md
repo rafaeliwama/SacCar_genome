@@ -78,6 +78,17 @@ I run busco, protein mode, using the arthropoda_odb10 set on each genome.
 nohup busco -i protein.faa -l arthropoda_odb10 -o genome_busco.out -m proteins --cpu 5 -f
 ```
 
+## functional annotation SacCar
+
+blastp e interpro
+
+```
+diamond blastp --log --threads 10 --db ~/databases/swissprot/uniprot_sprot.diamond --query ~/Genomes/SacCar/SacCar_annotation/SacCar_augustus.hints.aa --ultra-sensitive --outfmt 6 --max-target-seqs 1 --evalue 1e-10 --out SacCar.blastp.txt
+
+
+~/Softwares/interproscan-5.61-93.0/./interproscan.sh -i ~/Genomes/SacCar/SacCar_annotation/SacCar_augustus.hints.aa -o /home/riwama/Genomes/SacCar/SacCar_annotation/interpro/SacCar.interpro.txt -goterm -cpu 5 -f gff3
+```
+
 
 
 
